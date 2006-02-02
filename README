@@ -1,0 +1,19 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1454
+
+This is a dark scheme consisting primarily of red/orange & green/blue/purple, with support for Terminal and 7.0 users. 
+Both the original dark and a light version is included, be sure to specify the version:
+  :set background=dark   or   :set background=light
+
+Colors are laid out intuitively, such that:
+         action/structure syntax is tan (Control Structure: red; Commands: orange; Operators: tannish yellow)
+         variables/values are blue (Identifier: greenish blue; Type: greyish blue; Constants: blue)                                   
+         text/special text is white/yellow (Normal: white; Title: golden; Underline: yellow; Special: brown)
+It works very well for me coding in Html, ASP, and Perl.
+
+Screenshots (v2.1): [removed from image host, I'll need to resubmit some]
+
+Recommended programming fonts:
+  ProFont, Proggy Fonts, Dina, or Envy Code A (downloadable), as well as Lucida Console or Terminal
+Set :set linespace=0  to your preferred line spread (default is 1). 
+
+Comments and suggestions:               axs221@gmail.com 
