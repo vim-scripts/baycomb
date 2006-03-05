@@ -1,5 +1,5 @@
 " Vim color file
-" baycomb v1.9
+" baycomb v2.0
 " http://www.vim.org/scripts/script.php?script_id=1454
 " 
 " Maintainer:	Shawn Axsom <axs221@gmail.com>
@@ -23,14 +23,14 @@ endif
 
 let g:colors_name="baycomb"
 
-hi Normal       guifg=#b5c5f0 guibg=#111218   "1a1823
+hi Normal       guifg=#a5b5e0 guibg=#11131a   "1a1823
 hi NonText      guifg=#382920 guibg=bg
 
 hi Folded       guibg=#1b182f guifg=#BBDDCC
 hi FoldColumn	guibg=#00060a guifg=#dbcaa5
-hi LineNr       guibg=#000000 guifg=#506389 
-hi StatusLine	guibg=#3b3a4d guifg=#00a0f0 gui=none
-hi StatusLineNC	guibg=#353040 guifg=#6c8dae gui=none
+hi LineNr       guibg=#101010 guifg=#506389 
+hi StatusLine	guibg=#353348 guifg=#6080f0 gui=none
+hi StatusLineNC	guibg=#2c2a3a guifg=#5c6dae gui=none
 hi VertSplit	guibg=#222535 guifg=#223355  gui=none
 
 hi tablinesel   guibg=#515a71 guifg=#50aae5 gui=none
@@ -56,24 +56,24 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 hi Title	    guifg=#e5e5ca gui=none
-hi Underlined   guifg=#cad5ca gui=none
+hi Underlined   guifg=#bac5ba gui=none
 
-hi Statement    guifg=#e0757a gui=none
-hi Type		    guifg=#906dcd gui=none
-hi Constant	    guifg=#3a9bdd "guibg=#111a2a
-hi Number       guifg=#20a5c0 "guibg=#111a2a
-hi PreProc      guifg=#ba85df
-hi Special	    guifg=#aa9aaa
+hi Statement    guifg=#d0a0aa gui=none
+hi Type		    guifg=#658dda  gui=none
+hi Constant	    guifg=#3088e0 "guibg=#111a2a
+hi Number       guifg=#4580ba "guibg=#111a2a
+hi PreProc      guifg=#ba75cf
+hi Special	    guifg=#9a8a9a
 hi Ignore       guifg=grey40
 hi Todo		    guifg=orangered guibg=yellow2
 hi Error        guibg=#b03452
-hi Function     guifg=#d0a58c guibg=bg gui=None 
-hi Identifier   guifg=#60a0c0   
+hi Function     guifg=#da95c8 guibg=bg gui=None 
+hi Identifier   guifg=#608ac0   
 """""this section borrowed from OceanDeep/Midnight"""""
-highlight Conditional gui=None guifg=#d0406a guibg=bg
-highlight Repeat gui=None guifg=#e53d5a guibg=bg
+highlight Conditional gui=None guifg=#d0687a guibg=bg
+highlight Repeat gui=None guifg=#e0606a guibg=bg
 "hi Label gui=None guifg=LightGreen guibg=bg
-highlight Operator gui=None guifg=#d0aaa0 guibg=bg
+highlight Operator gui=None guifg=#e8cdc0 guibg=bg
 highlight Keyword gui=bold guifg=grey guibg=bg
 highlight Exception gui=none guifg=#ea5460 guibg=bg
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -177,5 +177,3 @@ hi Pmenu        ctermbg=darkblue ctermfg=lightgrey
 hi PmenuSel     ctermbg=lightblue ctermfg=white                    
 
 "vim: sw=4
-
-
