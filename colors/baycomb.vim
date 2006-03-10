@@ -1,5 +1,5 @@
 " Vim color file
-" baycomb v2.1
+" baycomb v2.1c
 " http://www.vim.org/scripts/script.php?script_id=1454
 " 
 " Maintainer:	Shawn Axsom <axs221@gmail.com>
@@ -110,12 +110,12 @@ hi PmenuSel     guibg=#4a85ba guifg=#b0d0f0
 
 " color terminal definitions
 hi Normal ctermfg=grey
-hi Number ctermfg=darkgreen
+hi Number ctermfg=green
 highlight Operator ctermfg=yellow
-highlight Conditional ctermfg=red
+highlight Conditional ctermfg=magenta
 highlight Repeat ctermfg=red
 hi Exception ctermfg=yellow
-hi function ctermfg=magenta
+hi function ctermfg=green
 hi SpecialKey	ctermfg=darkgreen
 hi NonText	cterm=bold ctermfg=darkgrey
 hi Directory	ctermfg=darkcyan
@@ -129,7 +129,7 @@ hi Question	ctermfg=green
 hi StatusLine	ctermfg=darkmagenta ctermbg=white cterm=NONE
 hi StatusLineNC ctermfg=black ctermbg=grey cterm=NONE
 hi VertSplit	ctermfg=black ctermbg=grey cterm=NONE
-hi Title	ctermfg=Yellow cterm=NONE
+hi Title	ctermfg=yellow cterm=NONE
 hi Visual	ctermbg=darkcyan ctermfg=black cterm=NONE
 hi VisualNOS	ctermbg=darkcyan ctermfg=black cterm=NONE
 hi WarningMsg	ctermfg=1
@@ -156,11 +156,11 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 hi Constant	ctermfg=darkcyan
-hi Special	ctermfg=white
-hi Statement	ctermfg=darkyellow
+hi Special	ctermfg=darkgreen
+hi Statement	ctermfg=yellow
 hi PreProc	ctermfg=magenta
 hi Type		ctermfg=cyan " ctermbg=darkblue
-hi Underlined	ctermfg=yellow cterm=NONE
+hi Underlined	ctermfg=darkyellow cterm=NONE
 hi Ignore	cterm=bold ctermfg=7
 hi Ignore	ctermfg=darkgrey
 hi Error	cterm=bold ctermfg=7 ctermbg=1
