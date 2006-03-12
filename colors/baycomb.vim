@@ -1,5 +1,5 @@
-" Vim color file
-" baycomb v2.1c
+"n Vim color file
+" baycomb v2.1d
 " http://www.vim.org/scripts/script.php?script_id=1454
 " 
 " Maintainer:	Shawn Axsom <axs221@gmail.com>
@@ -110,12 +110,12 @@ hi PmenuSel     guibg=#4a85ba guifg=#b0d0f0
 
 " color terminal definitions
 hi Normal ctermfg=grey
-hi Number ctermfg=green
+hi Number ctermfg=cyan
 highlight Operator ctermfg=yellow
-highlight Conditional ctermfg=magenta
+highlight Conditional ctermfg=red
 highlight Repeat ctermfg=red
 hi Exception ctermfg=yellow
-hi function ctermfg=green
+hi function ctermfg=yellow
 hi SpecialKey	ctermfg=darkgreen
 hi NonText	cterm=bold ctermfg=darkgrey
 hi Directory	ctermfg=darkcyan
@@ -124,28 +124,28 @@ hi IncSearch	ctermfg=yellow ctermbg=darkyellow cterm=NONE
 hi Search	ctermfg=black ctermbg=darkyellow cterm=NONE
 hi MoreMsg	ctermfg=darkgreen
 hi ModeMsg	cterm=NONE ctermfg=brown
-hi LineNr	ctermfg=grey ctermbg=NONE
+hi LineNr	ctermfg=darkcyan ctermbg=black
 hi Question	ctermfg=green
-hi StatusLine	ctermfg=darkmagenta ctermbg=white cterm=NONE
-hi StatusLineNC ctermfg=black ctermbg=grey cterm=NONE
-hi VertSplit	ctermfg=black ctermbg=grey cterm=NONE
+hi StatusLine	ctermfg=yellow ctermbg=darkblue cterm=NONE
+hi StatusLineNC ctermfg=grey ctermbg=darkblue cterm=NONE
+hi VertSplit	ctermfg=black ctermbg=darkgrey cterm=NONE
 hi Title	ctermfg=yellow cterm=NONE
 hi Visual	ctermbg=darkcyan ctermfg=black cterm=NONE
 hi VisualNOS	ctermbg=darkcyan ctermfg=black cterm=NONE
 hi WarningMsg	ctermfg=1
 hi WildMenu	ctermfg=0 ctermbg=3
-hi Folded	ctermfg=grey ctermbg=darkblue cterm=NONE
-hi FoldColumn	ctermfg=green ctermbg=black
+hi Folded	ctermfg=darkgreen ctermbg=darkblue cterm=NONE
+hi FoldColumn	ctermfg=yellow ctermbg=black
 hi DiffAdd	ctermbg=4
 hi DiffChange	ctermbg=5
 hi DiffDelete	cterm=bold ctermfg=4 ctermbg=6
 hi DiffText	cterm=bold ctermbg=1
-hi identifier   ctermfg=cyan
+hi identifier   ctermfg=darkgreen
 
 "set comments to grey on non-Windows OS's to make sure
 "it is readable
 if &term == "builtin_gui" || &term == "win32"
-	hi Comment		ctermfg=black  ctermbg=darkgreen
+	hi Comment		ctermfg=black  ctermbg=darkcyan
 	hi IncSearch	ctermfg=black ctermbg=grey cterm=NONE
 	hi Search	ctermfg=black ctermbg=darkgrey cterm=NONE
 else
@@ -156,11 +156,11 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 hi Constant	ctermfg=darkcyan
-hi Special	ctermfg=darkgreen
-hi Statement	ctermfg=yellow
+hi Special	ctermfg=white
+hi Statement	ctermfg=darkyellow
 hi PreProc	ctermfg=magenta
 hi Type		ctermfg=cyan " ctermbg=darkblue
-hi Underlined	ctermfg=darkyellow cterm=NONE
+hi Underlined	ctermfg=cyan cterm=NONE
 hi Ignore	cterm=bold ctermfg=7
 hi Ignore	ctermfg=darkgrey
 hi Error	cterm=bold ctermfg=7 ctermbg=1
@@ -169,4 +169,9 @@ hi Error	cterm=bold ctermfg=7 ctermbg=1
 hi Pmenu        ctermbg=darkblue ctermfg=lightgrey
 hi PmenuSel     ctermbg=lightblue ctermfg=white                    
 
+hi tablinesel   ctermfg=cyan ctermbg=blue
+hi tabline      ctermfg=black ctermbg=blue
+hi tablinefill  ctermfg=green ctermbg=darkblue
 "vim: sw=4
+"
+hi MatchParen	ctermfg=black ctermbg=green
