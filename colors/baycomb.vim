@@ -1,11 +1,12 @@
 "n Vim color file
-" baycomb v2.1e
+" baycomb v2.1f
 " http://www.vim.org/scripts/script.php?script_id=1454
 " 
 " Maintainer:	Shawn Axsom <axs221@gmail.com>
 "
 "   * Place :colo baycomb in your VimRC/GVimRC file
-"     * GvimRC if using GUI
+"   * Also add :set background=dark  or :setbackground=light
+"     depending on your preference.
 "
 "   - Thanks to Desert and OceanDeep for their color scheme 
 "     file layouts
@@ -110,12 +111,11 @@ hi PmenuSel     guibg=#4a85ba guifg=#b0d0f0
 
 " color terminal definitions
 hi Normal ctermfg=grey
-hi Number ctermfg=cyan
+hi Number ctermfg=darkgreen
 highlight Operator ctermfg=yellow
 highlight Conditional ctermfg=red
 highlight Repeat ctermfg=red
 hi Exception ctermfg=yellow
-hi function ctermfg=green
 hi SpecialKey	ctermfg=darkgreen
 hi NonText	cterm=bold ctermfg=darkgrey
 hi Directory	ctermfg=darkcyan
@@ -130,8 +130,8 @@ hi StatusLine	ctermfg=yellow ctermbg=darkblue cterm=NONE
 hi StatusLineNC ctermfg=grey ctermbg=darkblue cterm=NONE
 hi VertSplit	ctermfg=black ctermbg=darkgrey cterm=NONE
 hi Title	ctermfg=yellow cterm=NONE
-hi Visual	ctermbg=darkcyan ctermfg=black cterm=NONE
-hi VisualNOS	ctermbg=darkcyan ctermfg=black cterm=NONE
+hi Visual	ctermbg=grey ctermfg=blue cterm=NONE
+hi VisualNOS	ctermbg=grey ctermfg=blue cterm=NONE
 hi WarningMsg	ctermfg=1
 hi WildMenu	ctermfg=0 ctermbg=3
 hi Folded	ctermfg=darkgreen ctermbg=darkblue cterm=NONE
@@ -140,18 +140,19 @@ hi DiffAdd	ctermbg=4
 hi DiffChange	ctermbg=5
 hi DiffDelete	cterm=bold ctermfg=4 ctermbg=6
 hi DiffText	cterm=bold ctermbg=1
-hi identifier   ctermfg=darkgreen
+hi Comment		ctermfg=black ctermbg=darkgreen
+hi Identifier   ctermfg=cyan
 
 "set comments to grey on non-Windows OS's to make sure
 "it is readable
 if &term == "builtin_gui" || &term == "win32"
-	hi Type		ctermfg=darkgrey
-	hi Comment		ctermfg=black  ctermbg=darkcyan
+	hi function ctermfg=grey
+	hi Type		ctermfg=darkyellow ctermbg=darkblue
 	hi IncSearch	ctermfg=black ctermbg=grey cterm=NONE
 	hi Search	ctermfg=black ctermbg=darkgrey cterm=NONE
 else
+	hi function ctermfg=white
 	hi Type		ctermfg=grey
-	hi Comment		ctermfg=grey  ctermbg=darkblue
 	hi IncSearch	ctermfg=yellow ctermbg=darkyellow cterm=NONE
 	hi Search	ctermfg=black ctermbg=darkyellow cterm=NONE
 endif
@@ -159,7 +160,7 @@ endif
 
 hi Constant	ctermfg=darkcyan
 hi Special	ctermfg=white
-hi Statement	ctermfg=darkyellow
+hi Statement	ctermfg=yellow
 hi PreProc	ctermfg=magenta
 hi Underlined	ctermfg=cyan cterm=NONE
 hi Ignore	cterm=bold ctermfg=7
