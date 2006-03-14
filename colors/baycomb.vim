@@ -1,5 +1,5 @@
-"n Vim color file
-" baycomb v2.1f
+" Vim color file
+" baycomb v2.1g
 " http://www.vim.org/scripts/script.php?script_id=1454
 " 
 " Maintainer:	Shawn Axsom <axs221@gmail.com>
@@ -110,7 +110,7 @@ hi PmenuSel     guibg=#4a85ba guifg=#b0d0f0
 
 
 " color terminal definitions
-hi Normal ctermfg=grey
+hi Normal ctermfg=grey ctermbg=black
 hi Number ctermfg=darkgreen
 highlight Operator ctermfg=yellow
 highlight Conditional ctermfg=red
@@ -141,7 +141,7 @@ hi DiffChange	ctermbg=5
 hi DiffDelete	cterm=bold ctermfg=4 ctermbg=6
 hi DiffText	cterm=bold ctermbg=1
 hi Comment		ctermfg=black ctermbg=darkgreen
-hi Identifier   ctermfg=cyan
+hi Identifier   ctermfg=cyan ctermbg=black
 
 "set comments to grey on non-Windows OS's to make sure
 "it is readable
