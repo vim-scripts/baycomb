@@ -1,5 +1,5 @@
 " Vim color file
-" baycomb v2.2
+" baycomb v2.3
 " http://www.vim.org/scripts/script.php?script_id=1454
 " 
 " Maintainer:	Shawn Axsom <axs221@gmail.com>
@@ -10,7 +10,7 @@
 "
 "   - Thanks to Desert and OceanDeep for their color scheme 
 "     file layouts
-"   - Thanks to Raimon Grau for his feedback
+"   - Thanks to Raimon Grau and Bob Lied for their feedback
 
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
@@ -48,12 +48,12 @@ hi MatchParen	guibg=#7b5a55 guifg=#001122
 " syntax highlighting """"""""""""""""""""""""""""""""""""""""
 
 
-hi Comment		guifg=darkgrey  guibg=#24283a
+hi Comment		guifg=#349d58 guibg=bg
 hi Title	    guifg=#e5e5ca gui=none
 hi Underlined   guifg=#bac5ba gui=none
 
 hi Statement    guifg=#fca8ad gui=none "a080aa
-hi Type		    guifg=#0490e8  gui=none
+hi Type		    guifg=#0490e8  gui=bold
 hi Constant	    guifg=#5c78f0 "guibg=#111a2a
 hi Number       guifg=#4580b4 "guibg=#111a2a
 hi PreProc      guifg=#ba75cf
@@ -85,7 +85,7 @@ hi ErrorMsg     guibg=#ff4545
 hi Cursor       guibg=#cad5c0 guifg=#0000aa
 
 
-hi Search       guibg=#808373 guifg=#3a4520
+hi Search       guibg=darkyellow guifg=black
 hi IncSearch	guifg=#babeaa guibg=#3a4520 
 
 hi ModeMsg    	guifg=#00AACC
@@ -110,12 +110,13 @@ hi PmenuSel     guibg=#4a85ba guifg=#b0d0f0
 
 
 " color terminal definitions
-hi Normal ctermfg=grey
+hi Cursor ctermfg=black ctermbg=white
+hi Normal ctermfg=grey ctermbg=black
 hi Number ctermfg=darkgreen
 highlight Operator ctermfg=yellow
-highlight Conditional ctermfg=red
-highlight Repeat ctermfg=red
-hi Exception ctermfg=yellow
+highlight Conditional ctermfg=darkred
+highlight Repeat ctermfg=darkred
+hi Exception ctermfg=darkred
 hi SpecialKey	ctermfg=darkgreen
 hi NonText	cterm=bold ctermfg=darkgrey
 hi Directory	ctermfg=darkcyan
@@ -140,7 +141,7 @@ hi DiffAdd	ctermbg=4
 hi DiffChange	ctermbg=5
 hi DiffDelete	cterm=bold ctermfg=4 ctermbg=6
 hi DiffText	cterm=bold ctermbg=1
-hi Comment		ctermfg=black ctermbg=darkgreen
+hi Comment		ctermfg=darkgreen ctermbg=black
 hi Identifier   ctermfg=cyan
 
 "set comments to grey on non-Windows OS's to make sure
@@ -161,7 +162,7 @@ endif
 hi Constant	ctermfg=darkcyan
 hi Special	ctermfg=white
 hi Statement	ctermfg=yellow
-hi PreProc	ctermfg=magenta
+hi PreProc	ctermfg=darkred
 hi Underlined	ctermfg=cyan cterm=NONE
 hi Ignore	cterm=bold ctermfg=7
 hi Ignore	ctermfg=darkgrey
