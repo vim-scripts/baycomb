@@ -1,5 +1,5 @@
 " Vim color file
-" baycomb v2.3
+" baycomb v2.4
 " http://www.vim.org/scripts/script.php?script_id=1454
 " 
 " Maintainer:	Shawn Axsom <axs221@gmail.com>
@@ -76,10 +76,10 @@ highlight Exception gui=bold guifg=#d0a8ad guibg=bg
 " highlight groups
 "hi CursorIM
 hi Directory	guifg=#bbd0df
-"hi DiffAdd
-"hi DiffChange
-"hi DiffDelete
-"hi DiffText
+hi DiffText    guibg=#004335
+hi DiffChange   guibg=#685b5c
+hi DiffAdd      guibg=#0a4b8c
+hi DiffDelete   guifg=#300845 guibg=#200845
 hi ErrorMsg     guibg=#ff4545
 
 hi Cursor       guibg=#cad5c0 guifg=#0000aa
