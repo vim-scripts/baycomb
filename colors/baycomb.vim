@@ -23,6 +23,8 @@ endif
 
 let g:colors_name="baycomb"
 
+hi! link        SignColumn LineNr
+
 if &background == "dark"
 hi Normal       guifg=#a0b4e0 guibg=#11121a   "1a1823
 hi NonText      guifg=#382920 guibg=bg
